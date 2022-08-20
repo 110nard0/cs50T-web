@@ -23,15 +23,33 @@ nav {
 	padding-left: 8px;
 }
 
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+.hero {
+	background-color: black;
+}
+
 /* .hero-text {
 	margin: px
 } */
 
 #kitty {
-	transform: rotate(280deg);
+	transform: rotate(275deg);
 }
 
+.image {
+	margin-top: 20px;
+}
 
+#robo {
+	margin: 10px
+}
 
 @media screen and (max-width: 1024px) {
 	#kitty {
