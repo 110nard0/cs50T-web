@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anime</title>
+	<script src="https://kit.fontawesome.com/d6da9c60f7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header class="">
+		<nav class="navbar is-fixed-top is-spaced is-light" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand" id="nav-brand">
+				<a class="navbar-item is-family-code has-text-danger-dark" href="#">
+					R E V I E W &lt; / &gt; D E M O N
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navMenu" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="./index.html" id="navHome">Home</a>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" id="navLink">More</a>
+
+						<div class="navbar-dropdown">
+							<a class="navbar-item">Docs</a>
+							<a class="navbar-item">About</a>
+							<a class="navbar-item">Contact</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button is-danger"><strong>Sign up</strong></a>
+							<a class="button is-info"><strong>Log In</strong></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="tabs is-centered is-boxed has-background-danger">
+		<ul>
+			<li>
+				<a class="has-text-black" href="./books.html">
+					<span class="icon is-small"><i class="fa-solid fa-book-journal-whills" aria-hidden="true"></i></span>
+					<span>Books</span>
+				</a>
+			</li>
+			<li>
+				<a class="has-text-black" href="./movies.html">
+					<span class="icon is-small"><i class="fa-solid fa-film" aria-hidden="true"></i></span>
+					<span>Movies</span>
+				</a>
+			</li>
+			<li class="is-active">
+				<a class="has-text-black" href="./anime.html">
+					<span class="icon is-small"><i class="fa-solid fa-explosion" aria-hidden="true"></i></span>
+					<span>Anime</span>
+				</a>
+			</li>
+			<li>
+				<a class="has-text-black" href="./shows.html">
+					<span class="icon is-small"><i class="fas fa-tv" aria-hidden="true"></i></span>
+					<span>TV Shows</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+				});
+			});
+
+		});
+	</script>
+
+</body>
+
+</html>

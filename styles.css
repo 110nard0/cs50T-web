@@ -1,8 +1,5 @@
 html {
 	box-sizing: border-box;
-}
-
-body {
 	height: 100vh;
 }
 
@@ -26,6 +23,18 @@ nav {
 	padding-left: 8px;
 }
 
+/* .hero-text {
+	margin: px
+} */
+
 #kitty {
 	transform: rotate(280deg);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	#kitty {
+		display: none;
+	}
 }
