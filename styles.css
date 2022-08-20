@@ -52,7 +52,15 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+	.hero-body {
+		flex-direction: column;
+	}
+
+	.tabs a {
+		padding: 8px;
+	}
+
 	#kitty {
-		display: none;
+		transform: rotate(270deg);
 	}
 }
