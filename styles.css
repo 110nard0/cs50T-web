@@ -35,20 +35,20 @@ nav {
 	background-color: black;
 }
 
-/* .hero-text {
-	margin: px
-} */
-
 #kitty {
-	transform: rotate(275deg);
+	transform: rotate(270deg);
 }
 
-.image {
-	margin-top: 20px;
+#robot {
+	margin: 10px;
 }
 
-#robo {
-	margin: 10px
+.columns {
+	margin: 20px;
+}
+
+.column {
+	margin: 10px;
 }
 
 @media screen and (max-width: 1024px) {
