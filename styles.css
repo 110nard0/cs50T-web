@@ -45,17 +45,23 @@ nav {
 
 .columns {
 	margin: 20px;
+	padding: 20px;
 	display: flex;
 }
 
 .column {
 	margin: 10px;
+	padding: 15px;
 }
 
 .card {
-	border: 2px solid turquoise;
 	height: 100%;
 }
+
+.card-image {
+	border-bottom: 1px solid black;
+}
+
 
 
 @media screen and (max-width: 1024px) {
