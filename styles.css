@@ -45,11 +45,18 @@ nav {
 
 .columns {
 	margin: 20px;
+	display: flex;
 }
 
 .column {
 	margin: 10px;
 }
+
+.card {
+	border: 2px solid turquoise;
+	height: 100%;
+}
+
 
 @media screen and (max-width: 1024px) {
 	.hero-body {
@@ -62,5 +69,10 @@ nav {
 
 	#kitty {
 		transform: rotate(270deg);
+	}
+
+	.columns {
+		display: flex;
+		flex-direction: column;
 	}
 }
